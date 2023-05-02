@@ -7,29 +7,75 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
 
-<section class="cross-platform">
+<section class="reviews">
     <div class="container">
-        <div class="cross-platform__inner">
-            <h2 class="cross-platform__title">Remote-first. Secure by design.</h2>
-            <img class="cross-platform__img" src="images/cross-img.png" alt="cross-platform">
-            <p class="cross-platform__text">You no longer need an over-powered laptop to code, Gitpod works just as <br>
-                smoothly on a Chromebook or iPad. All you need is a browser. Gitpod centralizes
-                <br> all source code and never stores it on insecure machines and networks.</p>
-            <ul class="choose-extension__list">
-                <li class="choose-extension__item extension-item">
-                    <img src="images/ext-chrome.png" alt="chrome">
-                    <p class="extension-item__title">Chrome Extension</p>
-                </li>
-                <li class="choose-extension__item extension-item">
-                    <img src="images/ext-firefox.png" alt="firefox">
-                    <p class="extension-item__title">Firefox Extension</p>
-                </li>
-            </ul>
+
+        <h2 class="reviews__title">Used by 400,000+ developers.</h2>
+
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide review-item">
+                    <p class="review-text">GitPod is incredibly cool.<br>In my opinion, this is a big step in open source software contribution. I'm excited to see where we go from here.</p>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-1.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Ben Halpern</p>
+                            <div class="reviewer__text">Creator and Co-founder <span>@forem </span>and <br> <span>@ThePracticalDev</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide review-item">
+                    <p class="review-text">Let's say we were overwhelmed how smooth @gitpod workspaces creation & own Docker image for workspaces worked.
+                        <br> Plus, installing @code extensions from the store and integrating @gitlab CI. That blew my mind entirely, and that is hard ;)</p>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-2.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Michael Friedrich</p>
+                            <div class="reviewer__text">Developer Evangelist <span>@GitLab</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide review-item">
+                    <p class="review-text">Look at any PR (pull request) in a full coding environment where you can edit, build, and test the PR code, by just prepending "gitpod.io#" to the PR URL. Super useful for reviewing/testing stuff without having to check it out locally!</p>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-3.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Julius Volz</p>
+                            <div class="reviewer__text">Creator <span>@PrometheusIO</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide review-item">
+                    <p class="review-text">I think I’m in love with @gitpod. It’s such a powerful tool. I’ve learned so much in the past week just from stumbling across Github repos that interest me and appending “http://gitpod.io/#” to the URL. A+ tool all around.</p>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-4.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Michael Friedrich</p>
+                            <div class="reviewer__text">Developer Evangelist <span>@GitLab</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
+
+        <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+
+        <script>
+            var swiper = new Swiper(".mySwiper", {
+                autoHeight: false,
+                speed: 3000,          //add
+                slidesPerView: 2,     //add
+                spaceBetween: 20,
+
+            });
+        </script>
     </div>
 </section>
 
