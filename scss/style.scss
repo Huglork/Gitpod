@@ -25,5 +25,59 @@ body{
   margin: 0 auto;
   padding: 0 15px;
 }
+.main-content{
+  padding: 160px 0;
+}
+.main-content__info{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.main-content__title{
+  font-size: 54px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 355px;
+  & span{
+    font-weight: 400;
+    text-decoration: line-through;
+    color: #999795;
+  }
+}
+.content__info{
+  max-width: 655px;
+}
+.info-text__title{
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 40px;
+  margin-bottom: 8px;
+}
+.info-text__subtitle{
+  font-size: 24px;
+  line-height: 32px;
+  color: $mainColor;
+}
+.info-text__btns{
+  margin-top: 145px;
+  display: flex;
+  gap: 16px;
+}
 
+.info__btn{
+  padding: 8px 18px;
+  border-radius: 10.5px;
+  font-weight: 700;
+  transition: all 0.5s;
 
+  &:hover{
+    background-color: #999795;
+    color: white;
+  }
+}
+.more-btn{
+  background-color: #FFAE33;
+}
+.doc-btn{
+  background-color: #FFB0AE;
+}
