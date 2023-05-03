@@ -27,152 +27,162 @@ body {
   padding: 0 15px;
 }
 
-.reviews{
-  height: 100vh;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.swiper-slide {
-  width: 80%;
-}
-
-.swiper-slide:nth-child(2n) {
-  width: 60%;
-}
-
-.swiper-slide:nth-child(3n) {
-  width: 40%;
-}
-
-.swiper-slide {
-  flex-basis: 384px;
-  border-radius: 9px;
-  padding: 15px;
-  text-align: left;
-}
-
-.swiper {
-  width: 100%;
-  height: 100%;
-}
-
-.swiper .swiper-slide {
-  height: auto;
-}
-
-.swiper-slide img {
-  display: block;
-  width: auto;
-  height: 100%;
-  object-fit: cover;
-  border-radius: 15px;
-}
-
-.swiper-pagination-bullets {
-  display: none;
-}
-
-.reviews__title {
+.get-started__title {
   font-size: 54px;
   font-weight: 700;
   text-align: center;
+  margin-bottom: 48px;
 }
 
-.review-item {
+.get-started__inner{
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  padding: 32px;
-  border-radius: 16px;
-}
-
-.mySwiper .swiper-wrapper {
-  transition-timing-function: linear;
-}
-
-.review-text {
-  line-height: 22px;
-  height: 120px;
+  justify-content: center;
+  gap: 26px;
 }
 
 
-.review-item__info {
-  margin-top: 40px;
-  display: flex;
-  gap: 20px;
-  align-items: center;
-
+.get-started__connect-git {
+  padding: 56px;
+  background: white;
+  border-radius: 20px;
+  width: 50%;
 }
 
-.review-info__text {
-  display: flex;
-  align-items: flex-start;
-  flex-direction: column;
-  gap: 10px;
-}
 
-.reviewer__name {
-  margin: 0;
+.section__title{
+  font-size: 32px;
+  line-height: 40px;
   font-weight: 700;
+  text-align: center;
+  margin-bottom: 0px;
 }
 
-.reviewer__text {
-  text-align: left;
-
-  & span {
-    font-weight: 700;
-  }
+.section__subtitle, .connect-git__text{
+  font-size: 24px;
+  line-height: 32px;
+  color: $mainColor;
+  opacity: 0.7;
+  max-width: 530px;
+  text-align: center;
+}
+.connect-git__subtitle{
+  margin-bottom: 62px;
 }
 
-
-.companies {
-  margin-top: 130px;
+.connect-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 64px;
 }
 
-.companies__inner {
-background: rgb(255, 255, 255);
-  overflow: hidden;
-
-}
-
-.companies__list {
+.connect-list__item {
   display: flex;
   align-items: center;
-  animation: marquee 7s infinite linear;
-
-}
-
-.companies-item {
-
-}
-
-@keyframes marquee {
-  from {
-    transform: translateX(115%);
-    transform-origin: left center;
+  gap: 16px;
+  padding: 0px 33px;
+  min-width: 210px;
+  border-radius: 12px;
+  cursor: pointer;
+  & img {
+    height: 28px;
+    width: 28px;
   }
-  to {
-    transform: translateX(-110%);
-    transform-origin: right center;
+}
+
+.connect-item{
+  transition: all 0.7s;
+  &:hover{
+    transform: scale(1.04);
+  }
+}
+
+.connect-item__text {
+  font-weight: 700;
+  color: white;
+}
+
+.connect-GitLab {
+  background: #FC6D26;
+}
+
+.connect-GitHub {
+  background: black;
+
+}
+
+.connect-BitBucket {
+  background: #2684FF;
+}
+
+.connect-git__text{
+  margin-bottom: 0;
+}
+
+.git-link{
+  display: flex;
+  justify-content: center;
+}
+.connect-git__link{
+  padding: 5px 20px;
+  font-size: 24px;
+  line-height: 32px;
+  border-radius: 12px;
+  background: #FFE4BC;
+  color: rgba(18, 16, 12, 0.7);
+  transition: all 0.7s;
+  &:hover{
+    transform: scale(1.04);
+  }
+}
+
+.get-started__workspaces{
+  padding: 56px;
+  background: white;
+  border-radius: 20px;
+  width: 50%;
+
+}
+.workspaces__list{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.workspaces-item{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 495px;
+  padding: 0px 16px;
+  background-color: #F9F9F9;
+  border-radius: 12px;
+  width: 100%;
+}
+.workspaces-item__text{
+  font-size: 20px;
+  text-align: center;
+  color: #12100C;
+  opacity: 0.7;
+}
+.workspaces-item__info{
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.workspace-btn{
+  background-color: #12100C;
+  border-radius: 12px;
+  padding: 8px 12px;
+  color: #FFFFFF;
+
+  transition: all 0.7s;
+
+  &:hover{
+    color: #12100C;
+    background-color: white;
+    border: 1px solid rgba(18, 16, 12, 0.7);
   }
 }

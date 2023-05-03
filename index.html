@@ -7,126 +7,90 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 <body>
 
-<section class="reviews">
+<section class="get-started">
     <div class="container">
+        <h2 class="get-started__title">Get started now</h2>
+        <div class="get-started__inner">
+            <div class="get-started__connect-git connect-git">
+                <h3 class="connect-git__title section__title">Connect Git repository</h3>
+                <p class="connect-git__subtitle section__subtitle">Select a Git provider to start with an existing
+                    project from any Git
+                    context.</p>
 
-        <h2 class="reviews__title">Used by 400,000+ developers.</h2>
-
-        <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide review-item">
-                    <div>
-                        <p class="review-text">GitPod is incredibly cool.<br>In my opinion,
-                        this is a big step in open source software contribution. I'm excited to see where
-                        we go from here.
-                    </p>
-                    </div>
-                    <div class="review-item__info review-info">
-                        <img src="images/reviewer-1.png" alt="reviewer-avt" class="review-info__img">
-                        <div class="review-info__text">
-                            <p class="reviewer__name">Ben Halpern</p>
-                            <div class="reviewer__text">Creator and Co-founder <span>@forem </span>and <br> <span>@ThePracticalDev</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide review-item">
-                    <div>
-                        <p class="review-text">Let's say we were overwhelmed how smooth @gitpod workspaces creation & own
-                        Docker image for workspaces worked.
-                        <br> Plus, installing @code extensions from the store and integrating @gitlab CI.
-                        That blew my mind entirely, and that is hard ;)
-                    </p>
-                    </div>
-                    <div class="review-item__info review-info">
-                        <img src="images/reviewer-2.png" alt="reviewer-avt" class="review-info__img">
-                        <div class="review-info__text">
-                            <p class="reviewer__name">Michael Friedrich</p>
-                            <div class="reviewer__text">Developer Evangelist <span>@GitLab</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide review-item">
-                    <div>
-                        <p class="review-text">Look at any PR (pull request) in a full coding environment where you can
-                        edit, build, and test the PR code, by just prepending "gitpod.io#" to the PR URL. Super useful
-                        for reviewing/testing stuff without having to check it out locally!</p>
-
-                    </div>
-                    <div class="review-item__info review-info">
-                        <img src="images/reviewer-3.png" alt="reviewer-avt" class="review-info__img">
-                        <div class="review-info__text">
-                            <p class="reviewer__name">Julius Volz</p>
-                            <div class="reviewer__text">Creator <span>@PrometheusIO</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide review-item">
-                    <div>
-                        <p class="review-text">I think I’m in love with @gitpod. It’s such a powerful tool. I’ve
-                        learned
-                        so much in the past week just from stumbling across Github repos that interest me and appending
-                        “http://gitpod.io/#” to the URL. A+ tool all around.</p>
-                    </div>
-
-                    <div class="review-item__info review-info">
-                        <img src="images/reviewer-4.png" alt="reviewer-avt" class="review-info__img">
-                        <div class="review-info__text">
-                            <p class="reviewer__name">Michael Friedrich</p>
-                            <div class="reviewer__text">Developer Evangelist <span>@GitLab</span></div>
-                        </div>
-                    </div>
-                </div>
-                <div class="swiper-slide review-item">
-                    <div>
-                        <p class="review-text">GitPod is incredibly cool.<br>In my opinion,
-                            this is a big step in open source software contribution. I'm excited to see where
-                            we go from here.
+                <ul class="connect-git__list connect-list">
+                    <li class="connect-list__item connect-item connect-GitLab">
+                        <img src="images/GitLab-Connect.png" alt="GitLab" class="connect-item__img">
+                        <p class="connect-item__text">
+                            Continue with GitHub
                         </p>
-                    </div>
-                    <div class="review-item__info review-info">
-                        <img src="images/reviewer-1.png" alt="reviewer-avt" class="review-info__img">
-                        <div class="review-info__text">
-                            <p class="reviewer__name">Ben Halpern</p>
-                            <div class="reviewer__text">Creator and Co-founder <span>@forem </span>and <br> <span>@ThePracticalDev</span></div>
-                        </div>
-                    </div>
+                    </li>
+                    <li class="connect-list__item connect-item connect-GitHub">
+                        <img src="images/GitHub-Connect.png" alt="GitHub" class="connect-item__img">
+                        <p class="connect-item__text">
+                            Continue with GitLab
+                        </p>
+                    </li>
+                    <li class="connect-list__item connect-item connect-BitBucket">
+                        <img src="images/BitBucket-Connect.png" alt="BitBucket" class="connect-item__img">
+                        <p class="connect-item__text">
+                            Continue with BitBucket
+                        </p>
+                    </li>
+                </ul>
+
+                <p class="connect-git__text">Or prefix any GitLab, GitHub or Bitbucket URL with</p>
+                <div class="git-link"><a target="_blank" href="https://github.com/Huglork" class="connect-git__link">gitpod.io/#</a>
                 </div>
             </div>
 
-        </div>
-
-        </div>
-
-    <div class="companies">
-        <div class="container">
-            <div class="companies__inner">
-                <ul class="companies__list">
-                    <li class="companies__list-item"><img src="images/4geeksAcademy-NewLine.png" alt="4geeks"
-                                                          class="companies-item"></li>
-                    <li class="companies__list-item"><img src="images/Google-NewLine.png" alt="Google"
-                                                          class="companies-item">
+            <div class="get-started__workspaces workspaces">
+                <h3 class="workspaces__title section__title">Launch an example workspace</h3>
+                <p class="workspaces__subtitle section__subtitle">Dive into one of our example workspaces</p>
+                <ul class="workspaces__list">
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/TypeScript.png" alt="Node-TypeScript">
+                            <p class="workspaces-item__text">Node or TypeScript</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
                     </li>
-                    <li class="companies__list-item"><img src="images/Gitlab-NewLine.png" alt="Gitlab"
-                                                          class="companies-item">
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Python.png" alt="Python">
+                            <p class="workspaces-item__text">Python</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
                     </li>
-                    <li class="companies__list-item"><img src="images/Amazon-NewLine.png" alt="Amazon"
-                                                          class="companies-item">
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Go.png" alt="Go">
+                            <p class="workspaces-item__text">Go</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
                     </li>
-                    <li class="companies__list-item"><img src="images/CodeInstitute-NewLine.png" alt="CodeInstitute"
-                                                          class="companies-item"></li>
-                    <li class="companies__list-item"><img src="images/Facebook-NewLine.png" alt="Facebook"
-                                                          class="companies-item"></li>
-                    <li class="companies__list-item"><img src="images/Dwave-NewLine.png" alt="Dwave" class="companies-item">
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Rust.png" alt="Rust">
+                            <p class="workspaces-item__text">Rust</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
                     </li>
-                    <li class="companies__list-item"><img src="images/Uber-NewLine.png" alt="Uber" class="companies-item">
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Java.png" alt="Java">
+                            <p class="workspaces-item__text">Java</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
                     </li>
-                    <li class="companies__list-item"><img src="images/Intel-NewLine.png" alt="Intel" class="companies-item">
-                    </li>
-                    <li class="companies__list-item"><img src="images/Theia-NewLine.png" alt="Theia" class="companies-item">
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/svelte.png" alt="Svelte">
+                            <p class="workspaces-item__text">Svelte</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
                     </li>
                 </ul>
             </div>
@@ -134,20 +98,5 @@
     </div>
 </section>
 
-
-
-<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
-<script>
-    var swiper = new Swiper(".mySwiper", {
-        loop: true,
-        spaceBetween: 30,
-        autoplay: {
-            delay: 0,
-        },
-        speed: 4000,          //add
-        slidesPerView: 2,     //add
-
-    });
-</script>
 </body>
 </html>
