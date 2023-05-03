@@ -1,30 +1,34 @@
 @import "css/normalize.css";
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-$mainColor:#12100C;
-$secColor:#12100CB2;
+$mainColor: #12100C;
+$secColor: #12100CB2;
 
 
-a{
+a {
   text-decoration: none;
   color: inherit;
 }
 
-li{
+li {
   list-style: none;
 }
 
-body{
+body {
   font-family: 'Roboto', sans-serif;
   color: $mainColor;
   font-size: 14px;
   background: #F5F3F4;
 }
 
-.container{
+.container {
   max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
+}
+
+.reviews{
+  height: 100vh;
 }
 
 .swiper {
@@ -60,12 +64,13 @@ body{
   width: 40%;
 }
 
-.swiper-slide{
+.swiper-slide {
   flex-basis: 384px;
   border-radius: 9px;
   padding: 15px;
   text-align: left;
 }
+
 .swiper {
   width: 100%;
   height: 100%;
@@ -87,41 +92,87 @@ body{
   display: none;
 }
 
-.reviews__title{
+.reviews__title {
   font-size: 54px;
   font-weight: 700;
   text-align: center;
 }
 
-
-.review-item{
-  cursor: pointer;
-  height: auto;
+.review-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 32px;
+  border-radius: 16px;
 }
 
+.mySwiper .swiper-wrapper {
+  transition-timing-function: linear;
+}
 
-.review-text{
+.review-text {
   line-height: 22px;
+  height: 120px;
 }
 
-.review-item__info{
+
+.review-item__info {
+  margin-top: 40px;
   display: flex;
   gap: 20px;
-  align-items: flex-start;
+  align-items: center;
+
 }
-.review-info__text{
+
+.review-info__text {
   display: flex;
   align-items: flex-start;
   flex-direction: column;
   gap: 10px;
 }
-.reviewer__name{
+
+.reviewer__name {
   margin: 0;
   font-weight: 700;
 }
-.reviewer__text{
+
+.reviewer__text {
   text-align: left;
-  & span{
+
+  & span {
     font-weight: 700;
+  }
+}
+
+
+.companies {
+  margin-top: 130px;
+}
+
+.companies__inner {
+background: rgb(255, 255, 255);
+  overflow: hidden;
+
+}
+
+.companies__list {
+  display: flex;
+  align-items: center;
+  animation: marquee 7s infinite linear;
+
+}
+
+.companies-item {
+
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(115%);
+    transform-origin: left center;
+  }
+  to {
+    transform: translateX(-110%);
+    transform-origin: right center;
   }
 }
