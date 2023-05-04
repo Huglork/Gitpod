@@ -2,8 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 a {
   text-decoration: none;
-  color: inherit;
-  color: #12100CB2; }
+  color: inherit; }
 
 li {
   list-style: none; }
@@ -18,57 +17,54 @@ body {
   margin: 0 auto;
   padding: 0 15px; }
 
-.header__inner {
+.ready-code__inner {
   display: flex;
-  justify-content: space-between;
+  gap: 50px;
   align-items: center; }
 
-.logo {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  gap: 10px;
-  cursor: pointer; }
-  .logo img {
-    width: 36px;
-    height: 40px; }
-  .logo p {
-    font-size: 28px; }
+.code__text-title {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 86px;
+  margin-bottom: 32px; }
 
-.nav-list {
+.code__text-subtitle {
+  font-size: 23px;
+  color: #12100CB2;
+  max-width: 460px;
+  margin-bottom: 48px; }
+
+.try-now {
   display: flex;
-  gap: 48px;
+  gap: 24px;
+  align-items: center;
+  margin-bottom: 16px; }
+
+.try-now__btn {
+  padding: 12px 46px;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #FFAE33;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s; }
+  .try-now__btn:hover {
+    background-color: #12100C;
+    color: #FFAE33; }
+
+.try-now__info {
+  color: #12100CB2;
+  margin: 0;
+  margin-bottom: 5px;
   padding: 0; }
 
-.nav-item__link {
-  transition: all 0.5s; }
+.social-list {
+  display: flex;
+  padding: 0;
+  gap: 29px; }
 
-.nav-item__link:after {
-  transition: all 0.5s; }
-
-.nav-item__link:hover {
-  color: #FFAE33; }
-
-.nav-list__item:last-child {
-  position: relative;
-  transition: all 0.5s; }
-  .nav-list__item:last-child:hover .nav-item__link:after {
-    color: #12100C; }
-  .nav-list__item:last-child .nav-item__link:after {
-    content: "*";
-    position: absolute;
-    color: #FFAE33;
-    top: -10px;
-    right: -10px; }
-
-.log-btn {
-  padding: 6px 22px;
-  background-color: #12100C;
-  color: white;
-  border-radius: 12px;
-  cursor: pointer;
-  transition: all 0.3s; }
-
-.log-btn:active {
-  background-color: white;
-  color: #12100C; }
+.ready-code-img {
+  width: 700px;
+  height: 672px; }
