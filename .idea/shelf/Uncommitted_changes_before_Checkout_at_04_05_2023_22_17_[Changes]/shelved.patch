@@ -1,0 +1,314 @@
+Index: css/style.css
+===================================================================
+diff --git a/css/style.css b/css/style.css
+deleted file mode 100644
+--- a/css/style.css	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
++++ /dev/null	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
+@@ -1,74 +0,0 @@
+-@import url(css/normalize.css);
+-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+-a {
+-  text-decoration: none;
+-  color: inherit;
+-  color: #12100CB2; }
+-
+-li {
+-  list-style: none; }
+-
+-body {
+-  font-family: 'Roboto', sans-serif;
+-  color: #12100C;
+-  font-size: 14px; }
+-
+-.container {
+-  max-width: 1310px;
+-  margin: 0 auto;
+-  padding: 0 15px; }
+-
+-.header__inner {
+-  display: flex;
+-  justify-content: space-between;
+-  align-items: center; }
+-
+-.logo {
+-  display: flex;
+-  justify-content: space-between;
+-  align-items: center;
+-  gap: 10px;
+-  cursor: pointer; }
+-  .logo img {
+-    width: 36px;
+-    height: 40px; }
+-  .logo p {
+-    font-size: 28px; }
+-
+-.nav-list {
+-  display: flex;
+-  gap: 48px;
+-  padding: 0; }
+-
+-.nav-item__link {
+-  transition: all 0.5s; }
+-
+-.nav-item__link:after {
+-  transition: all 0.5s; }
+-
+-.nav-item__link:hover {
+-  color: #FFAE33; }
+-
+-.nav-list__item:last-child {
+-  position: relative;
+-  transition: all 0.5s; }
+-  .nav-list__item:last-child:hover .nav-item__link:after {
+-    color: #12100C; }
+-  .nav-list__item:last-child .nav-item__link:after {
+-    content: "*";
+-    position: absolute;
+-    color: #FFAE33;
+-    top: -10px;
+-    right: -10px; }
+-
+-.log-btn {
+-  padding: 6px 22px;
+-  background-color: #12100C;
+-  color: white;
+-  border-radius: 12px;
+-  cursor: pointer;
+-  transition: all 0.3s; }
+-
+-.log-btn:active {
+-  background-color: white;
+-  color: #12100C; }
+Index: css/normalize.css
+===================================================================
+diff --git a/css/normalize.css b/css/normalize.css
+deleted file mode 100644
+--- a/css/normalize.css	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
++++ /dev/null	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
+@@ -1,78 +0,0 @@
+-/* Указываем box sizing */
+-*,
+-*::before,
+-*::after {
+-  box-sizing: border-box;
+-}
+-
+-/* Убираем внутренние отступы */
+-ul[class],
+-ol[class] {
+-  padding: 0;
+-}
+-
+-/* Убираем внешние отступы */
+-body,
+-h1,
+-h2,
+-h3,
+-h4,
+-p,
+-ul[class],
+-ol[class],
+-li,
+-figure,
+-figcaption,
+-blockquote,
+-dl,
+-dd {
+-  margin: 0;
+-}
+-
+-/* Выставляем основные настройки по-умолчанию для body */
+-body {
+-  min-height: 100vh;
+-  scroll-behavior: smooth;
+-  text-rendering: optimizeSpeed;
+-  line-height: 1.5;
+-}
+-
+-/* Удаляем стандартную стилизацию для всех ul и il, у которых есть атрибут class*/
+-ul[class],
+-ol[class] {
+-  list-style: none;
+-}
+-
+-/* Элементы a, у которых нет класса, сбрасываем до дефолтных стилей */
+-a:not([class]) {
+-  text-decoration-skip-ink: auto;
+-}
+-
+-/* Упрощаем работу с изображениями */
+-img {
+-  max-width: 100%;
+-  display: block;
+-}
+-
+-/* Указываем понятную периодичность в потоке данных у article*/
+-article > * + * {
+-  margin-top: 1em;
+-}
+-
+-/* Наследуем шрифты для инпутов и кнопок */
+-input,
+-button,
+-textarea,
+-select {
+-  font: inherit;
+-}
+-
+-/* Удаляем все анимации и переходы для людей, которые предпочитай их не использовать */
+-@media (prefers-reduced-motion: reduce) {
+-  * {
+-    animation-duration: 0.01ms !important;
+-    animation-iteration-count: 1 !important;
+-    transition-duration: 0.01ms !important;
+-    scroll-behavior: auto !important;
+-  }
+-}
+\ No newline at end of file
+Index: index.html
+===================================================================
+diff --git a/index.html b/index.html
+deleted file mode 100644
+--- a/index.html	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
++++ /dev/null	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
+@@ -1,37 +0,0 @@
+-<!doctype html>
+-<html lang="en">
+-<head>
+-    <meta charset="UTF-8">
+-    <meta name="viewport"
+-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+-    <title>Document</title>
+-    <link rel="stylesheet" href="css/style.css">
+-
+-</head>
+-<body>
+-
+-<div class="header">
+-    <div class="container">
+-        <div class="header__inner">
+-            <div class="logo">
+-                <img src="./images/logo.png" alt="logo">
+-                <p class="logo-text">Gitpod</p>
+-            </div>
+-            <ul class="nav-list">
+-                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Features</a></li>
+-                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Pricing</a></li>
+-                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Blog</a></li>
+-                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Docs</a></li>
+-                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Changelog</a></li>
+-                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">We're hiring</a></li>
+-            </ul>
+-            <button class="log-btn">Login</button>
+-        </div>
+-
+-    </div>
+-</div>
+-
+-<script src="js/script.js"></script>
+-</body>
+-</html>
+\ No newline at end of file
+Index: scss/style.scss
+===================================================================
+diff --git a/scss/style.scss b/scss/style.scss
+deleted file mode 100644
+--- a/scss/style.scss	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
++++ /dev/null	(revision 0cd5aa90d2f8f72a5e599b3a7a90756054908803)
+@@ -1,92 +0,0 @@
+-@import "css/normalize.css";
+-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+-
+-$mainColor:#12100C;
+-$secColor:#12100CB2;
+-
+-
+-a{
+-  text-decoration: none;
+-  color: $secColor;
+-}
+-
+-li{
+-  list-style: none;
+-}
+-
+-body{
+-  font-family: 'Roboto', sans-serif;
+-  color: $mainColor;
+-  font-size: 14px;
+-}
+-
+-.container{
+-  max-width: 1310px;
+-  margin: 0 auto;
+-  padding: 0 15px;
+-}
+-.header__inner{
+-  display: flex;
+-  justify-content: space-between;
+-  align-items: center;
+-}
+-.logo{
+-  & img{
+-    width: 36px;
+-    height: 40px;
+-  }
+-  & p{
+-    font-size: 28px;
+-  }
+-  display: flex;
+-  justify-content: space-between;
+-  align-items: center;
+-  gap: 10px;
+-  cursor: pointer;
+-}
+-.nav-list{
+-  display: flex;
+-  gap: 48px;
+-  padding: 0;
+-
+-}
+-
+-.nav-item__link{
+-  transition: all 0.5s;
+-}
+-.nav-item__link:after{
+-  transition: all 0.5s;
+-}
+-
+-.nav-item__link:hover{
+-  color: #FFAE33;
+-}
+-.nav-list__item:last-child{
+-  position: relative;
+-  transition: all 0.5s;
+-  &:hover{
+-    .nav-item__link:after{
+-      color: #12100C;
+-    }
+-  }
+-  & .nav-item__link:after{
+-    content: "*";
+-    position: absolute;
+-    color: #FFAE33;
+-    top: -10px;
+-    right: -10px;
+-  }
+-}
+-.log-btn{
+-  padding: 6px 22px;
+-  background-color: $mainColor;
+-  color: white;
+-  border-radius: 12px;
+-  cursor: pointer;
+-
+-  transition: all 0.3s;
+-}
+-.log-btn:active{
+-  background-color: white;
+-  color: $mainColor;
+-}
+\ No newline at end of file
+diff --git a/js/script.js b/js/script.js
+deleted file mode 100644
