@@ -18,6 +18,7 @@ li{
 body{
   font-family: 'Roboto', sans-serif;
   color: $mainColor;
+  background-color: #F5F3F4;
   font-size: 14px;
 }
 
@@ -25,6 +26,9 @@ body{
   max-width: 1310px;
   margin: 0 auto;
   padding: 0 15px;
+}
+.header{
+  margin-bottom: 32px;
 }
 .header__inner{
   display: flex;
@@ -210,6 +214,9 @@ body{
   background-color: #FFB0AE;
 }
 
+.cross-platform{
+  margin-bottom: 180px;
+}
 
 .cross-platform__inner{
   & img{
@@ -409,6 +416,9 @@ body{
     transform: translateX(-110%);
     transform-origin: right center;
   }
+}
+.get-started{
+  margin-bottom: 160px;
 }
 
 .get-started__title {
