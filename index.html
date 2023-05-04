@@ -10,93 +10,72 @@
 </head>
 <body>
 
-<section class="get-started">
+<footer class="footer">
     <div class="container">
-        <h2 class="get-started__title">Get started now</h2>
-        <div class="get-started__inner">
-            <div class="get-started__connect-git connect-git">
-                <h3 class="connect-git__title section__title">Connect Git repository</h3>
-                <p class="connect-git__subtitle section__subtitle">Select a Git provider to start with an existing
-                    project from any Git
-                    context.</p>
+    <ul class="footer-list footer-container">
+        <li class="footer-list__item footer-item">
+            <p class="footer-item__title">GitPod</p>
+            <a href="#" class="footer-item__link">Home</a>
+            <a href="#" class="footer-item__link">Features</a>
+            <a href="#" class="footer-item__link">Pricing</a>
+            <a href="#" class="footer-item__link">Changelog</a>
+            <a href="#" class="footer-item__link">Self-Hosted</a>
+            <a href="#" class="footer-item__link">Gitpod vs GitHub Codespaces</a>
+            <a href="#" class="footer-item__link">Status</a>
+        </li>
+        <li class="footer-list__item footer-item">
+            <p class="footer-item__title">Developer</p>
+            <a href="#" class="footer-item__link">Getting started</a>
+            <a href="#" class="footer-item__link">Screencasts</a>
+            <a href="#" class="footer-item__link">Blog</a>
+            <a href="#" class="footer-item__link">Documentation</a>
+            <a href="#" class="footer-item__link">Report a bug</a>
+            <a href="#" class="footer-item__link">Community</a>
+        </li>
+        <li class="footer-list__item footer-item">
+            <p class="footer-item__title">Company</p>
+            <a href="#" class="footer-item__link">About</a>
+            <a href="#" class="footer-item__link">Careers</a>
+            <a href="#" class="footer-item__link">Contact</a>
+            <a href="#" class="footer-item__link">Media Kit</a>
 
-                <ul class="connect-git__list connect-list">
-                    <li class="connect-list__item connect-item connect-GitLab">
-                        <img src="images/GitLab-Connect.png" alt="GitLab" class="connect-item__img">
-                        <p class="connect-item__text">
-                            Continue with GitHub
-                        </p>
-                    </li>
-                    <li class="connect-list__item connect-item connect-GitHub">
-                        <img src="images/GitHub-Connect.png" alt="GitHub" class="connect-item__img">
-                        <p class="connect-item__text">
-                            Continue with GitLab
-                        </p>
-                    </li>
-                    <li class="connect-list__item connect-item connect-BitBucket">
-                        <img src="images/BitBucket-Connect.png" alt="BitBucket" class="connect-item__img">
-                        <p class="connect-item__text">
-                            Continue with BitBucket
-                        </p>
-                    </li>
-                </ul>
+        </li>
+        <li class="footer-list__item footer-item">
+            <p class="footer-item__title">Legal</p>
+            <a href="#" class="footer-item__link">Imprint</a>
+            <a href="#" class="footer-item__link">Terms of Service</a>
+            <a href="#" class="footer-item__link">Privacy Policy</a>
+        </li>
+    </ul>
 
-                <p class="connect-git__text">Or prefix any GitLab, GitHub or Bitbucket URL with</p>
-                <div class="git-link"><a target="_blank" href="https://github.com/Huglork" class="connect-git__link">gitpod.io/#</a>
-                </div>
+        <div class="footer-copyright footer-container">
+            <div class="footer-copyright__left">
+                <img src="images/footer-logo.png" alt="footer-logo" class="footer-logo">
+                <p class="footer-text">Copyright © 2021 Gitpod</p>
             </div>
+            <div class="footer-copyright__right">
+                <a href="#" class="footer-link">
+                    <img src="images/footer-social-twitter.png" alt="twitter" class="footer-social__link">
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="images/footer-social-github.png" alt="GitHub" class="footer-social__link">
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="images/footer-social-WeChat.png" alt="WeChat" class="footer-social__link">
+                </a>
 
-            <div class="get-started__workspaces workspaces">
-                <h3 class="workspaces__title section__title">Launch an example workspace</h3>
-                <p class="workspaces__subtitle section__subtitle">Dive into one of our example workspaces</p>
-                <ul class="workspaces__list">
-                    <li class="workspaces__list-item workspaces-item">
-                        <div class="workspaces-item__info">
-                            <img class="workspaces-item__img" src="images/TypeScript.png" alt="Node-TypeScript">
-                            <p class="workspaces-item__text">Node or TypeScript</p>
-                        </div>
-                        <a href="#" class="workspace-btn">Launch workspace</a>
-                    </li>
-                    <li class="workspaces__list-item workspaces-item">
-                        <div class="workspaces-item__info">
-                            <img class="workspaces-item__img" src="images/Python.png" alt="Python">
-                            <p class="workspaces-item__text">Python</p>
-                        </div>
-                        <a href="#" class="workspace-btn">Launch workspace</a>
-                    </li>
-                    <li class="workspaces__list-item workspaces-item">
-                        <div class="workspaces-item__info">
-                            <img class="workspaces-item__img" src="images/Go.png" alt="Go">
-                            <p class="workspaces-item__text">Go</p>
-                        </div>
-                        <a href="#" class="workspace-btn">Launch workspace</a>
-                    </li>
-                    <li class="workspaces__list-item workspaces-item">
-                        <div class="workspaces-item__info">
-                            <img class="workspaces-item__img" src="images/Rust.png" alt="Rust">
-                            <p class="workspaces-item__text">Rust</p>
-                        </div>
-                        <a href="#" class="workspace-btn">Launch workspace</a>
-                    </li>
-                    <li class="workspaces__list-item workspaces-item">
-                        <div class="workspaces-item__info">
-                            <img class="workspaces-item__img" src="images/Java.png" alt="Java">
-                            <p class="workspaces-item__text">Java</p>
-                        </div>
-                        <a href="#" class="workspace-btn">Launch workspace</a>
-                    </li>
-                    <li class="workspaces__list-item workspaces-item">
-                        <div class="workspaces-item__info">
-                            <img class="workspaces-item__img" src="images/svelte.png" alt="Svelte">
-                            <p class="workspaces-item__text">Svelte</p>
-                        </div>
-                        <a href="#" class="workspace-btn">Launch workspace</a>
-                    </li>
-                </ul>
             </div>
         </div>
     </div>
-</section>
+
+</footer>
+
+<div class="cookies">
+    <p class="cookies-text">This website uses cookies to enhance the user experience. Read our <span>privacy policy</span> for more info.</p>
+    <a href="#" class="cookies-btn">Accept Cookies</a>
+
+</div>
+
 
 </body>
 </html>
