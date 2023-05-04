@@ -11,6 +11,27 @@
 </head>
 <body>
 
+<header class="header">
+    <div class="container">
+        <div class="header__inner">
+            <div class="logo">
+                <img src="./images/logo.png" alt="logo">
+                <p class="logo-text">Gitpod</p>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Features</a></li>
+                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Pricing</a></li>
+                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Blog</a></li>
+                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Docs</a></li>
+                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">Changelog</a></li>
+                <li class="nav-list__item nav-item"><a href="#" class="nav-item__link">We're hiring</a></li>
+            </ul>
+            <button class="log-btn">Login</button>
+        </div>
+
+    </div>
+</header>
+
 <section class="ready-code">
     <div class="container">
         <div class="ready-code__inner">
@@ -51,13 +72,360 @@
             </div>
             <img src="images/top-content-img.png" alt="content-1" class="ready-code-img"></img>
         </div>
-
     </div>
 </section>
 
 
+<section class="main-content">
+    <div class="container">
+        <div class="main-content__inner">
+            <h2 class="main-content__title">
+                Select project, <br> <span>check dependencies, checkout branch, view <br> readme.txt, install tools, run build,
+            run test,</span>
+                <br> start coding.
+            </h2>
 
+            <div class="main-content__info">
+                <div class="content__info info-text">
+                    <h3 class="info-text__title">
+                        Think CI/CD for dev environments
+                    </h3>
+                    <div class="info-text__subtitle">We invented prebuilds so application code, configuration and
+                        infrastructure can all be stored as machine-executable code in your git repositories and applied to
+                        dev environments automatically and continuously.
+                    </div>
+                    <div class="info-text__btns">
+                        <a href="#" class="more-btn info__btn">More on prebuilds</a>
+                        <a href="#" class="doc-btn info__btn">Documentation</a>
+                    </div>
+                </div>
+                <img src="images/main-info__img.png" alt="main-content" class="main-content__img"></img>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<section class="cross-platform">
+    <div class="container">
+        <div class="cross-platform__inner">
+            <h2 class="cross-platform__title">Remote-first. Secure by design.</h2>
+            <img class="cross-platform__img" src="images/cross-img.png" alt="cross-platform">
+            <p class="cross-platform__text">You no longer need an over-powered laptop to code, Gitpod works just as <br>
+                smoothly on a Chromebook or iPad. All you need is a browser. Gitpod centralizes
+                <br> all source code and never stores it on insecure machines and networks.</p>
+            <ul class="choose-extension__list">
+                <li class="choose-extension__item extension-item">
+                    <img src="images/ext-chrome.png" alt="chrome">
+                    <p class="extension-item__title">Chrome Extension</p>
+                </li>
+                <li class="choose-extension__item extension-item">
+                    <img src="images/ext-firefox.png" alt="firefox">
+                    <p class="extension-item__title">Firefox Extension</p>
+                </li>
+            </ul>
+        </div>
+    </div>
+</section>
+
+
+<section class="reviews">
+    <div class="container">
+
+        <h2 class="reviews__title">Used by 400,000+ developers.</h2>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide review-item">
+                    <div>
+                        <p class="review-text">GitPod is incredibly cool.<br>In my opinion,
+                            this is a big step in open source software contribution. I'm excited to see where
+                            we go from here.
+                        </p>
+                    </div>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-1.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Ben Halpern</p>
+                            <div class="reviewer__text">Creator and Co-founder <span>@forem </span>and <br> <span>@ThePracticalDev</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide review-item">
+                    <div>
+                        <p class="review-text">Let's say we were overwhelmed how smooth @gitpod workspaces creation & own
+                            Docker image for workspaces worked.
+                            <br> Plus, installing @code extensions from the store and integrating @gitlab CI.
+                            That blew my mind entirely, and that is hard ;)
+                        </p>
+                    </div>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-2.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Michael Friedrich</p>
+                            <div class="reviewer__text">Developer Evangelist <span>@GitLab</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide review-item">
+                    <div>
+                        <p class="review-text">Look at any PR (pull request) in a full coding environment where you can
+                            edit, build, and test the PR code, by just prepending "gitpod.io#" to the PR URL. Super useful
+                            for reviewing/testing stuff without having to check it out locally!</p>
+
+                    </div>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-3.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Julius Volz</p>
+                            <div class="reviewer__text">Creator <span>@PrometheusIO</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide review-item">
+                    <div>
+                        <p class="review-text">I think I’m in love with @gitpod. It’s such a powerful tool. I’ve
+                            learned
+                            so much in the past week just from stumbling across Github repos that interest me and appending
+                            “http://gitpod.io/#” to the URL. A+ tool all around.</p>
+                    </div>
+
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-4.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Michael Friedrich</p>
+                            <div class="reviewer__text">Developer Evangelist <span>@GitLab</span></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide review-item">
+                    <div>
+                        <p class="review-text">GitPod is incredibly cool.<br>In my opinion,
+                            this is a big step in open source software contribution. I'm excited to see where
+                            we go from here.
+                        </p>
+                    </div>
+                    <div class="review-item__info review-info">
+                        <img src="images/reviewer-1.png" alt="reviewer-avt" class="review-info__img">
+                        <div class="review-info__text">
+                            <p class="reviewer__name">Ben Halpern</p>
+                            <div class="reviewer__text">Creator and Co-founder <span>@forem </span>and <br> <span>@ThePracticalDev</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="companies">
+        <div class="container">
+            <div class="companies__inner">
+                <ul class="companies__list">
+                    <li class="companies__list-item"><img src="images/4geeksAcademy-NewLine.png" alt="4geeks"
+                                                          class="companies-item"></li>
+                    <li class="companies__list-item"><img src="images/Google-NewLine.png" alt="Google"
+                                                          class="companies-item">
+                    </li>
+                    <li class="companies__list-item"><img src="images/Gitlab-NewLine.png" alt="Gitlab"
+                                                          class="companies-item">
+                    </li>
+                    <li class="companies__list-item"><img src="images/Amazon-NewLine.png" alt="Amazon"
+                                                          class="companies-item">
+                    </li>
+                    <li class="companies__list-item"><img src="images/CodeInstitute-NewLine.png" alt="CodeInstitute"
+                                                          class="companies-item"></li>
+                    <li class="companies__list-item"><img src="images/Facebook-NewLine.png" alt="Facebook"
+                                                          class="companies-item"></li>
+                    <li class="companies__list-item"><img src="images/Dwave-NewLine.png" alt="Dwave" class="companies-item">
+                    </li>
+                    <li class="companies__list-item"><img src="images/Uber-NewLine.png" alt="Uber" class="companies-item">
+                    </li>
+                    <li class="companies__list-item"><img src="images/Intel-NewLine.png" alt="Intel" class="companies-item">
+                    </li>
+                    <li class="companies__list-item"><img src="images/Theia-NewLine.png" alt="Theia" class="companies-item">
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="get-started">
+    <div class="container">
+        <h2 class="get-started__title">Get started now</h2>
+        <div class="get-started__inner">
+            <div class="get-started__connect-git connect-git">
+                <h3 class="connect-git__title section__title">Connect Git repository</h3>
+                <p class="connect-git__subtitle section__subtitle">Select a Git provider to start with an existing
+                    project from any Git
+                    context.</p>
+
+                <ul class="connect-git__list connect-list">
+                    <li class="connect-list__item connect-item connect-GitLab">
+                        <img src="images/GitLab-Connect.png" alt="GitLab" class="connect-item__img">
+                        <p class="connect-item__text">
+                            Continue with GitHub
+                        </p>
+                    </li>
+                    <li class="connect-list__item connect-item connect-GitHub">
+                        <img src="images/GitHub-Connect.png" alt="GitHub" class="connect-item__img">
+                        <p class="connect-item__text">
+                            Continue with GitLab
+                        </p>
+                    </li>
+                    <li class="connect-list__item connect-item connect-BitBucket">
+                        <img src="images/BitBucket-Connect.png" alt="BitBucket" class="connect-item__img">
+                        <p class="connect-item__text">
+                            Continue with BitBucket
+                        </p>
+                    </li>
+                </ul>
+
+                <p class="connect-git__text">Or prefix any GitLab, GitHub or Bitbucket URL with</p>
+                <div class="git-link"><a target="_blank" href="https://github.com/Huglork" class="connect-git__link">gitpod.io/#</a>
+                </div>
+            </div>
+
+            <div class="get-started__workspaces workspaces">
+                <h3 class="workspaces__title section__title">Launch an example workspace</h3>
+                <p class="workspaces__subtitle section__subtitle">Dive into one of our example workspaces</p>
+                <ul class="workspaces__list">
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/TypeScript.png" alt="Node-TypeScript">
+                            <p class="workspaces-item__text">Node or TypeScript</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
+                    </li>
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Python.png" alt="Python">
+                            <p class="workspaces-item__text">Python</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
+                    </li>
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Go.png" alt="Go">
+                            <p class="workspaces-item__text">Go</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
+                    </li>
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Rust.png" alt="Rust">
+                            <p class="workspaces-item__text">Rust</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
+                    </li>
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/Java.png" alt="Java">
+                            <p class="workspaces-item__text">Java</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
+                    </li>
+                    <li class="workspaces__list-item workspaces-item">
+                        <div class="workspaces-item__info">
+                            <img class="workspaces-item__img" src="images/svelte.png" alt="Svelte">
+                            <p class="workspaces-item__text">Svelte</p>
+                        </div>
+                        <a href="#" class="workspace-btn">Launch workspace</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer">
+    <div class="container">
+        <ul class="footer-list footer-container">
+            <li class="footer-list__item footer-item">
+                <p class="footer-item__title">GitPod</p>
+                <a href="#" class="footer-item__link">Home</a>
+                <a href="#" class="footer-item__link">Features</a>
+                <a href="#" class="footer-item__link">Pricing</a>
+                <a href="#" class="footer-item__link">Changelog</a>
+                <a href="#" class="footer-item__link">Self-Hosted</a>
+                <a href="#" class="footer-item__link">Gitpod vs GitHub Codespaces</a>
+                <a href="#" class="footer-item__link">Status</a>
+            </li>
+            <li class="footer-list__item footer-item">
+                <p class="footer-item__title">Developer</p>
+                <a href="#" class="footer-item__link">Getting started</a>
+                <a href="#" class="footer-item__link">Screencasts</a>
+                <a href="#" class="footer-item__link">Blog</a>
+                <a href="#" class="footer-item__link">Documentation</a>
+                <a href="#" class="footer-item__link">Report a bug</a>
+                <a href="#" class="footer-item__link">Community</a>
+            </li>
+            <li class="footer-list__item footer-item">
+                <p class="footer-item__title">Company</p>
+                <a href="#" class="footer-item__link">About</a>
+                <a href="#" class="footer-item__link">Careers</a>
+                <a href="#" class="footer-item__link">Contact</a>
+                <a href="#" class="footer-item__link">Media Kit</a>
+
+            </li>
+            <li class="footer-list__item footer-item">
+                <p class="footer-item__title">Legal</p>
+                <a href="#" class="footer-item__link">Imprint</a>
+                <a href="#" class="footer-item__link">Terms of Service</a>
+                <a href="#" class="footer-item__link">Privacy Policy</a>
+            </li>
+        </ul>
+
+        <div class="footer-copyright footer-container">
+            <div class="footer-copyright__left">
+                <img src="images/footer-logo.png" alt="footer-logo" class="footer-logo">
+                <p class="footer-text">Copyright © 2021 Gitpod</p>
+            </div>
+            <div class="footer-copyright__right">
+                <a href="#" class="footer-link">
+                    <img src="images/footer-social-twitter.png" alt="twitter" class="footer-social__link">
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="images/footer-social-github.png" alt="GitHub" class="footer-social__link">
+                </a>
+                <a href="#" class="footer-link">
+                    <img src="images/footer-social-WeChat.png" alt="WeChat" class="footer-social__link">
+                </a>
+
+            </div>
+        </div>
+    </div>
+
+</footer>
+
+<div class="cookies">
+    <p class="cookies-text">This website uses cookies to enhance the user experience. Read our <span>privacy policy</span> for more info.</p>
+    <a href="#" class="cookies-btn">Accept Cookies</a>
+
+</div>
+
+
+
+
+
+
+<script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        loop: true,
+        spaceBetween: 30,
+        autoplay: {
+            delay: 0,
+        },
+        speed: 4000,          //add
+        slidesPerView: 2,     //add
+
+    });
+</script>
 <script src="js/script.js"></script>
-
 </body>
 </html>
