@@ -48,6 +48,9 @@ body {
   align-items: center;
   gap: 10px;
   cursor: pointer; }
+  .choose-extension__item img {
+    width: 24px;
+    height: 24px; }
 
 .extension-item {
   transition: all 0.8s; }
