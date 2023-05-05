@@ -9,4 +9,133 @@
     .log-btn{
         padding: 6px 12px;
     }
+    .code__text-title{
+        font-size: 52px;
+    }
+    .code__text-subtitle{
+        font-size: 20px;
+    }
+    .ready-code-img{
+        width: 100%;
+        height: 60%;
+    }
+    .main-content{
+        padding: 80px 0px;
+    }
+    .main-content__title{
+        font-size: 42px;
+        margin-bottom: 100px;
+    }
+    .main-content__img{
+        width: 50%;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .code__text-title{
+        font-size: 32px;
+        line-height: 54px;
+    }
+    .code__text-subtitle{
+        font-size: 16px;
+    }
+    .try-now__btn{
+        padding: 6px 46px;
+        font-size: 16px;
+    }
+    .ready-code-img{
+        width: 460px;
+        height: 340px;
+    }
+    .main-content__title{
+        font-size: 36px;
+        margin-bottom: 70px;
+    }
+    .info-text__title{
+        font-size: 28px;
+    }
+    .info-text__subtitle{
+        font-size: 20px;
+    }
+    .info-text__btns{
+        margin-top: 60px;
+    }
+    .main-content__img{
+        align-self: center;
+    }
+    .info__btn{
+        padding: 10px 10px;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 700px) {
+    .log-btn{
+        padding: 0 12px;
+    }
+    .ready-code__inner{
+        flex-direction: column;
+    }
+}
+
+@media (max-width: 480px) {
+    .footer{
+        padding-top: 20px;
+        padding-bottom: 10px;
+    }
+    .footer-list{
+        flex-wrap: wrap;
+        gap: 20px;
+        padding-bottom: 25px;
+    }
+    .footer-item{
+        width: 35%;
+
+    }
+    .footer-item__link{
+        font-size: 12px;
+    }
+    .cookies-text{
+        font-size: 12px;
+    }
+    .cookies-btn{
+        text-align: center;
+    }
+    .main-content__title{
+        font-size: 24px;
+    }
+    .main-content__info {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .info-text__title{
+        font-size: 20px;
+    }
+    .info-text__subtitle{
+        font-size: 16px;
+    }
+    .info-text__btns{
+        justify-content: center;
+        margin-bottom: 20px;
+    }
+    .info__btn{
+        font-size: 12px;
+    }
+    .main-content__img {
+        width: 100%;
+    }
+
+}
+
+
+@media{
+    .code__text-subtitle{
+        margin-bottom: 10px;
+    }
+    .try-now__btn{
+        font-size: 12px;
+    }
 }
