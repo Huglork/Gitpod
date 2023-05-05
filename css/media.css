@@ -29,6 +29,12 @@
     .main-content__img{
         width: 50%;
     }
+    .cross-platform{
+        margin-bottom: 110px;
+    }
+    .cross-platform__title{
+        font-size: 50px;
+    }
 }
 
 
@@ -45,10 +51,7 @@
         padding: 6px 46px;
         font-size: 16px;
     }
-    .ready-code-img{
-        width: 460px;
-        height: 340px;
-    }
+
     .main-content__title{
         font-size: 36px;
         margin-bottom: 70px;
@@ -68,6 +71,25 @@
     .info__btn{
         padding: 10px 10px;
         font-size: 13px;
+    }
+    .cross-platform__title{
+        font-size: 48px;
+    }
+    .cross-platform__text{
+        font-size: 18px;
+    }
+    .cross-platform{
+        margin-bottom: 70px;
+    }
+    .reviews__title{
+        font-size: 48px;
+    }
+    .swiper-slide{
+        font-size: 16px;
+        line-height: 18px;
+    }
+    .companies{
+        margin-top: 80px;
     }
 }
 
@@ -127,15 +149,55 @@
     .main-content__img {
         width: 100%;
     }
+    .cross-platform__title{
+        font-size: 28px;
+    }
+    .extension-item__title{
+        font-size: 12px;
+    }
+
+    .reviews__title{
+        font-size: 28px;
+    }
+
+@keyframes marquee {
+    0% {
+        transform: translateX(115%);
+        transform-origin: left center;
+    }
+
+    100% {
+        transform: translateX(-340%);
+        transform-origin: right center;
+    }
+}
+
+    .reviews {
+        height: 85vh;
+    }
 
 }
 
 
-@media{
+@media (max-width: 320px){
     .code__text-subtitle{
         margin-bottom: 10px;
     }
     .try-now__btn{
         font-size: 12px;
+    }
+    .cross-platform__text{
+        font-size: 14px;
+    }
+    @keyframes marquee {
+        0% {
+            transform: translateX(115%);
+            transform-origin: left center;
+        }
+
+        100% {
+            transform: translateX(-550%);
+            transform-origin: right center;
+        }
     }
 }
