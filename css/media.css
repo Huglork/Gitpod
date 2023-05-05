@@ -35,9 +35,34 @@
     .cross-platform__title{
         font-size: 50px;
     }
+    .workspaces-item__text{
+        font-size: 12px;
+    }
+    .workspace-btn{
+        font-size: 8px;
+    }
+    .get-started {
+        margin-bottom: 110px;
+    }
 }
 
-
+@media (max-width: 870px) {
+    .workspaces-item{
+        padding: 5px 16px;
+    }
+    .workspaces-item__text{
+        display: none;
+    }
+    .section__title{
+        font-size: 28px;
+    }
+    .section__subtitle{
+        font-size: 20px;
+    }
+    .connect-git__text{
+        font-size: 16px;
+    }
+}
 
 @media (max-width: 768px) {
     .code__text-title{
@@ -90,6 +115,28 @@
     }
     .companies{
         margin-top: 80px;
+    }
+    .get-started__inner{
+        flex-direction: column;
+    }
+    .get-started__connect-git{
+        width: 100%;
+    }
+    .workspaces{
+        width: 100%;
+    }
+    .workspaces-item{
+        flex-direction: row;
+        gap: 10px;
+    }
+    .workspaces-item__text{
+        display: block;
+    }
+    .workspace-btn, .workspaces-item__text{
+        font-size: 14px;
+    }
+    .get-started {
+        margin-bottom: 80px;
     }
 }
 
@@ -175,6 +222,36 @@
     .reviews {
         height: 85vh;
     }
+    .get-started__workspaces{
+        padding: 30px;
+    }
+    .workspaces-item__text{
+        display: none;
+    }
+    .workspace-btn{
+        font-size: 10px;
+        text-align: center;
+    }
+    .connect-list__item{
+        width: 100%;
+        height: 80px;
+        min-width: 150px;
+    }
+    .connect-item__text{
+        font-size: 12px;
+    }
+    .section__title {
+        font-size: 24px;
+    }
+    .section__subtitle {
+        font-size: 16px;
+    }
+    .connect-list{
+        margin-bottom: 30px;
+    }
+    .section__subtitle{
+        line-height: 24px;
+    }
 
 }
 
@@ -199,5 +276,8 @@
             transform: translateX(-550%);
             transform-origin: right center;
         }
+    }
+    .get-started {
+        margin-bottom: 60px;
     }
 }
