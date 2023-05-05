@@ -17,6 +17,7 @@
     }
     .ready-code-img{
         width: 100%;
+        overflow: hidden;
         height: 60%;
     }
     .main-content{
